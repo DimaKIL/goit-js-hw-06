@@ -21,4 +21,7 @@ obj.email = emailValue;
 obj.password = passwordValue;
 console.log(obj);
 document.getElementById().reset();
+
+
+// резет і як записати в обєєкт назву свойства змінною
 }
