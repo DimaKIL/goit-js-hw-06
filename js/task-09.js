@@ -10,9 +10,10 @@ const spanEL = document.querySelector('span');
 buttonEL.addEventListener('click', funk);
 
 
-const randColor = getRandomHexColor();
+
 console.log(randColor);
 function funk(event){
+  const randColor = getRandomHexColor();
   bodyEL.setAttribute(`style`, `background-color: ${randColor}`);
   spanEL.textContent = `${randColor}`;
 }
