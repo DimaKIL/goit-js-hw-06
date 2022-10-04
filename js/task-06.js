@@ -1,11 +1,11 @@
 const inputEL = document.querySelector('input');
 
 
-inputEL.addEventListener('blur', funk);
+inputEL.addEventListener('blur', onCheckingForValidity);
 let atrebuts = Number(inputEL.getAttribute('data-length'));
 let lengthInput = inputEL.value.length;
 
-function funk(event){
+function onCheckingForValidity(event){
     let lengthInput = inputEL.value.length;
     if(atrebuts !== lengthInput){
         inputEL.classList.add('invalid');

@@ -2,11 +2,11 @@ const formEL = document.querySelector('form');
 
 
 
-formEL.addEventListener('submit', funk);
+formEL.addEventListener('submit', onFillingOutTheForm);
 
 
 
-function funk(event) {
+function onFillingOutTheForm(event) {
 event.preventDefault();
 console.log(event.target.elements.email.value);
 if(event.target.elements.email.value === '' || event.target.elements.password.value === '' ){

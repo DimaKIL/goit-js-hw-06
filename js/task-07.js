@@ -3,11 +3,11 @@ const spanEL = document.querySelector('span');
 
 
 
-inputEL.addEventListener('input', funk);
+inputEL.addEventListener('input', onSliderIsMoved);
 
 
 
-function funk(event) {
+function onSliderIsMoved(event) {
     console.log(event.target.value)
     spanEL.setAttribute(`style`, `font-size: ${event.target.value}px`);
 }

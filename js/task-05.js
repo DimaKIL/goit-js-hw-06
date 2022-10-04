@@ -1,9 +1,9 @@
 const inputEL = document.querySelector('input');
 const spanEL = document.querySelector('span');
-inputEL.addEventListener('input', funk);
+inputEL.addEventListener('input', onOutputTextChange);
 
 
-function funk(event){
+function onOutputTextChange(event){
 const string = event.target.value;
 if(string !== ''){
     spanEL.textContent =  string;
